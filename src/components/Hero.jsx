@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import {Telescope } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -34,17 +34,20 @@ const Hero = () => {
 
         {/* Register Button */}
         <motion.div
-          className="mt-6 flex justify-center"
+          className="mt-6 cursor-pointer flex justify-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          <button className=" flex justify-center items-center gap-2 px-6 py-3 font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full shadow-lg hover:scale-105 transition">
-            Register Now
-            <motion.div animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
-              <ArrowRight className="h-5 w-5" />
+        <a href="#events">
+        <button className=" flex justify-center items-center gap-2 px-6 py-3 font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full shadow-lg hover:scale-105 transition">
+        <motion.div animate={{ y: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
+              <Telescope className="h-5 w-5" />
             </motion.div>
+            Explore
+   
           </button>
+        </a>
         </motion.div>
       </div>
     </section>

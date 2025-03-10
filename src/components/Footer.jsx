@@ -40,7 +40,7 @@ const Footer = () => {
               className="relative group inline-flex items-center justify-center px-6 py-3 text-lg font-bold text-white transition border bg-black rounded-br-4xl rounded-tr-4xl rounded-lg shadow-lg hover:scale-105"
             >
               🌐 Visit My Portfolio
-              <span className="absolute -bottom-1 left-0 w-full h-1 bg-white opacity-0 group-hover:opacity-100 transition"></span>
+              <span className="absolute -bottom-1 left-0 w-full h-1  opacity-0 group-hover:opacity-100 transition"></span>
             </a>
           </div>
 
