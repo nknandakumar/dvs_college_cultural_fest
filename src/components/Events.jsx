@@ -117,13 +117,13 @@ const Events = () => {
               <Card className="h-full bg-transparent overflow-hidden relative p-0 border-0">
                 {/* Image covering the entire top of the card with no gap */}
                 <div className="relative">
-                  <a href={event.link}>
+                  <div >
                     <img
                       src={event.image}
                       alt={event.name}
                       className="w-full h-54 object-cover object-down"
                     />
-                  </a>
+                  </div>
                 </div>
 
                 {/* Content */}
