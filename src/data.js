@@ -105,7 +105,7 @@ export const events = [
     rules: ["ಕರ್ನಾಟಕದ ಹಳ್ಳಿಯ ಸೊಗಡನ್ನು ಪ್ರದರ್ಶಿಸುವುದು."],
     eventCoordinator: "Pruthvi KJ Dept. of Zoology",
     image: "https://ik.imagekit.io/6b0su29zd/event%20images/fashion%20show.jpg?updatedAt=1741546921745",
-    link: "https://forms.gle/8KvLUaGrXdzzxZCa8",
+    link: "https://forms.gle/oZHURAK5QbMhzQkU8",
   },
   {
     name: "Mehndi",

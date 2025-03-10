@@ -178,7 +178,6 @@ const Event = () => {
           </motion.div>
         </div>
 
-        {/* Rules Section (Mobile responsive) */}
     
       </div>
     </div>
