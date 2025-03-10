@@ -92,10 +92,7 @@ const Events = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-display">
             Events
           </h2>
-          <p className="text-xl text-purple-200 max-w-3xl mx-auto">
-            A diverse showcase of talents across art forms, with something for
-            everyone to enjoy and participate in.
-          </p>
+       
           <div className="h-1 w-20 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-6 rounded-full"></div>
         </motion.div>
 
@@ -142,18 +139,49 @@ const Events = () => {
                         <p className="text-xs text-gray-400">{event.time}</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <Users className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <p className="text-sm text-gray-300">{event.members}</p>
-                    </div>
+               
                   </div>
 
                   <Link
                      to={`/event/${event.name.toLowerCase().replace(/\s+/g, '-')}`} 
-                    className="block w-full mt-4 py-3 px-4 bg-purple-900/50 hover:bg-purple-800 text-white rounded-lg border border-purple-700/50 transition-colors duration-300 flex items-center justify-center gap-2"
+                    className=""
                   >
-                    Details and Registration
-                    <ArrowRight className="h-4 w-4" />
+                
+<button className="" type="button" class="button">
+  <span className="fold"></span>
+
+  <div className="points_wrapper">
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+    <i className="point"></i>
+  </div>
+
+  <span className="inner"
+    ><svg
+      className="icon"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.5"
+    >
+      <polyline
+        points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"
+      ></polyline></svg
+    >Click here for more details</span
+  >
+</button>
+
+                
                   </Link>
                 </div>
               </Card>

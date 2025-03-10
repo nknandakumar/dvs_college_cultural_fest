@@ -4,6 +4,7 @@ import Events from '../components/Events'
 import Footer from '../components/Footer'
 import About from '../components/About.jsx'
 import Hero from '../components/Hero'
+import Contact from '../components/Contact'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero/>
       <About/>
       <Events/>
+      <Contact/>
       <Footer/>
     </div>
   )

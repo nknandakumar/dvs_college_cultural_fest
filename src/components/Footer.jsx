@@ -104,7 +104,7 @@ const Footer = () => {
             variant="ghost"
             className="flex flex-col items-center text-xs text-gray-300 hover:text-white hover:bg-gray-700"
           >
-            Events
+            Contact
           </Button>
        </a>
         </div>

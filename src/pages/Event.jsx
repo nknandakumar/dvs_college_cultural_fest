@@ -148,7 +148,12 @@ const Event = () => {
                 <Users className="h-6 w-6 text-purple-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-md font-medium text-white"> Event-Coordinator</p>
-                  <p className="text-gray-400">{event.eventCoordinator}</p>
+                 
+                  {
+                    event.eventCoordinator.map((n , index)=>{
+                     return <p key={index} className="text-gray-400">{n}</p>
+                    })
+                  }
                 </div>
               </div>
             </div>

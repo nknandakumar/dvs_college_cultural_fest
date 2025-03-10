@@ -44,7 +44,7 @@ const Hero = () => {
         <motion.div animate={{ y: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
               <Telescope className="h-5 w-5" />
             </motion.div>
-            Explore
+           Explore Events
    
           </button>
         </a>
