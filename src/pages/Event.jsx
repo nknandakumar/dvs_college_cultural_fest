@@ -12,7 +12,8 @@ const Event = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Find the event based on the URL parameter
+
+    window.scrollTo(0, 0)
     const foundEvent = events.find(e => e.name.toLowerCase().replace(/\s+/g, '-') === id);
     
     if (foundEvent) {
@@ -43,7 +44,7 @@ const Event = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-purple-950/30 pt-20 pb-16 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-black to-purple-950/30 pt-10 pb-16 px-4">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-90"></div>

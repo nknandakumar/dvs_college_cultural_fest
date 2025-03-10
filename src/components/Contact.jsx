@@ -17,7 +17,7 @@ const Contact = () => {
       </Badge>
       
       <h2 className="text-3xl font-bold font-display my-8 mb-10 text-purple-400 text-center">
-        FACULTY & COORDINATORS
+        Faculty &n Co-ordinators
         <div className="h-1 w-20 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-6 rounded-full"></div>
       </h2>
       

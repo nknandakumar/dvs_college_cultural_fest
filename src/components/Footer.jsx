@@ -1,4 +1,5 @@
 import React from 'react';
+import  ReactGA from "react-ga4";
 import { Button } from "../../@/components/ui/button"; 
 import {
   Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription 
@@ -34,6 +35,13 @@ const Footer = () => {
           {/* Portfolio Link (Fully Visible & Clickable) */}
           <div className="mt-4 flex justify-center">
             <a
+             onClick={() => {
+              ReactGA.event({
+                category: "User",
+                action: "NK Button",
+                label: "Nk Button" 
+              });
+            }}
               href="https://nandakumarm.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
