@@ -10,7 +10,7 @@ import {
 import { Badge } from "../../@/components/ui/badge";
 import { Card } from "../../@/components/ui/card";
 import { events } from "../data.js";
-
+import {Link} from "react-router-dom"
 const Events = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
@@ -143,22 +143,18 @@ const Events = () => {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <p className="text-sm text-gray-300">{event.venue}</p>
-                    </div>
-                    <div className="flex items-start gap-3">
                       <Users className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
                       <p className="text-sm text-gray-300">{event.members}</p>
                     </div>
                   </div>
 
-                  <a 
-                    href={event.link} 
+                  <Link
+                     to={`/event/${event.name.toLowerCase().replace(/\s+/g, '-')}`} 
                     className="block w-full mt-4 py-3 px-4 bg-purple-900/50 hover:bg-purple-800 text-white rounded-lg border border-purple-700/50 transition-colors duration-300 flex items-center justify-center gap-2"
                   >
-                    Register for this Event
+                    Details and Registration
                     <ArrowRight className="h-4 w-4" />
-                  </a>
+                  </Link>
                 </div>
               </Card>
             </motion.div>
@@ -170,3 +166,7 @@ const Events = () => {
 };
 
 export default Events;
+
+
+
+
