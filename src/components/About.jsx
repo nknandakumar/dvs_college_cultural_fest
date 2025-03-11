@@ -53,7 +53,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative py-20 px-4 overflow-hidden bg-black" id="about">
+    <section id="about" className="relative py-20 px-4 overflow-hidden bg-black" >
       {/* Subtle animated background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 to-black"></div>
@@ -115,7 +115,7 @@ const About = () => {
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
                   <div className="px-6 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full inline-flex items-center gap-2 shadow-lg shadow-purple-500/20">
-                    <span className="text-white font-semibold">March 11<sup>th</sup> - 22<sup>nd</sup></span>
+                    <span className="text-white font-semibold">March 11<sup>th</sup> </span>
                   </div>
                 </motion.div>
               </div>
